@@ -10,7 +10,7 @@
   --strokeColor: #b8b8b8;
   --heartColor: #e21737;
   --size: 180px;
-  --totalAnim: 7s;
+  --totalAnim: 8s;
   --delay: 1s;
   --squareLen: 240;
   --circleLen: 188.522;
@@ -64,14 +64,14 @@
 }
 
 @keyframes square-anim {
-  12% {
+  10% {
     stroke-dashoffset: 0;
   }
-  43% {
+  50% {
     stroke-dashoffset: 0;
     opacity: 1;
   }
-  85% {
+  90% {
     stroke-dashoffset: 0;
     opacity: 0;
   }
@@ -81,23 +81,23 @@
   }
 }
 @keyframes left-circle-anim {
-  12% {
+  10% {
     stroke-dashoffset: var(--circleLen);
   }
-  31% {
+  30% {
     stroke-dashoffset: 0;
     transform: translateY(0);
   }
-  41% {
+  40% {
     stroke-dashoffset: 0;
     transform: translateY(calc(var(--circleW) / -2));
   }
-  43% {
+  50% {
     stroke-dashoffset: 0;
     transform: translateY(calc(var(--circleW) / -2));
     opacity: 1;
   }
-  85% {
+  90% {
     stroke-dashoffset: 0;
     transform: translateY(calc(var(--circleW) / -2));
     opacity: 0;
@@ -109,23 +109,23 @@
   }
 }
 @keyframes right-circle-anim {
-  12% {
+  10% {
     stroke-dashoffset: var(--circleLen);
   }
-  31% {
+  30% {
     stroke-dashoffset: 0;
     transform: translateX(0);
   }
-  41% {
+  40% {
     stroke-dashoffset: 0;
     transform: translateX(calc(var(--circleW) / 2));
   }
-  43% {
+  50% {
     stroke-dashoffset: 0;
     transform: translateX(calc(var(--circleW) / 2));
     opacity: 1;
   }
-  85% {
+  90% {
     stroke-dashoffset: 0;
     transform: translateX(calc(var(--circleW) / 2));
     opacity: 0;
@@ -137,17 +137,17 @@
   }
 }
 @keyframes group-anim {
-  43% {
+  40% {
     transform: rotate(0);
   }
-  54% {
+  50% {
     transform: rotate(-45deg);
   }
-  90% {
+  70% {
     transform: rotate(-45deg);
     opacity: 1;
   }
-  97% {
+  80% {
     transform: rotate(-45deg);
     opacity: 0;
   }
@@ -157,15 +157,15 @@
   }
 }
 @keyframes heart-anim {
-  55% {
+  50% {
     stroke-dashoffset: var(--heartLen);
     fill: transparent;
   }
-  70% {
+  60% {
     stroke-dashoffset: 0;
     fill: transparent;
   }
-  87% {
+  70% {
     stroke-dashoffset: 0;
     fill: var(--heartColor);
   }
